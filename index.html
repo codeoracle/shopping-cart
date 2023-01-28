@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ce913a3deb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="shopping-cart">
+      <div class="product">
+        <div class="titles">
+        <label for="favorite">Favorite</label>
+        <label for="image">Image</label>
+        <label for="description">Description</label>
+        <label for="price">Price</label>
+        <label for="quantity">Quantity</label>
+        <label for="subtotal">Subtotal</label>
+        <label for="remove">Remove</label>
+      </div>
+        <div class="items">
+          <div class="favorite" id="fav"><i class="fa-solid fa-heart"></i></div>
+          <div class="product-img">
+            <img
+              src="./img/quaritsch-photography-m2zuB8DqwyM-unsplash.jpg"
+              alt="Apple Laptop"
+            />
+          </div>
+          <div class="description">
+            <div class="content">
+              <span>Apple Desktop</span>
+              <span>MAc Pro</span>
+              <span>Gray</span>
+            </div>
+          </div>
+          <div id="price">$<span class="price">128</span></div>
+          <div class="quantity">
+            <input
+              type="number"
+              class="quantity-range"
+              id="quantity-range" 
+              min="1"
+              value="1"
+            />
+          </div>
+          <div class="subtotal">$<span id="subtotal">128</span></div>
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="items">
+          <div class="favorite" id="fav"><i class="fa-solid fa-heart"></i></div>
+          <div class="product-img">
+            <img
+              src="./img/luke-chesser-vCF5sB7QecM-unsplash.jpg"
+              alt="Apple Laptop"
+            />
+          </div>
+          <div class="description">
+            <div class="content">
+              <span>Apple Watch</span>
+              <span>Iwatch</span>
+              <span>Gray</span>
+            </div>
+          </div>
+           <div id="price2">$<span class="price2">75</span></div>
+          <div class="quantity">
+            <input
+              type="number"
+              class="quantity-range2"
+              id="quantity-range2"
+              min="1"
+              value="2"
+            />
+          </div>
+          <div class="subtotal2">$<span id="subtotal2">150</span></div>
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="items">
+          <div class="favorite" id="fav"><i class="fa-solid fa-heart"></i></div>
+          <div class="product-img">
+            <img
+              src="./img/leone-venter-pVt9j3iWtPM-unsplash.jpg"
+              alt="Apple Laptop"
+            />
+          </div>
+          <div class="description">
+            <div class="content">
+              <span>Apple Phone</span>
+              <span>Iphone</span>
+              <span>Black</span>
+            </div>
+          </div>
+           <div id="price3">$<span class="price3">90</span></div>
+          <div class="quantity">
+            <input
+              type="number"
+              class="quantity-range3"
+              id="quantity-range3"
+              min="1"
+              value="1"
+            />
+          </div>
+          <div class="subtotal3">$<span id="subtotal3">90</span></div>
+          <div class="remove"><i class="fa-solid fa-trash" ></i></div>
+        </div>
+      </div>
+      <div class="checkout">
+        
+        <div class="check-wrap">
+          
+          <div class="grand">
+              <span>Total Price</span>
+          </div>
+          <div class="total-price">$<span id="total-price">368</span></div>
+        </div>
+        <div class="items">
+          <div class="check-btn">
+            <button class="btn">CHECKOUT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
